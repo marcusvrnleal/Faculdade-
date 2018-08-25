@@ -1,0 +1,99 @@
+ALGORTIMO Exercicio_1
+	DECLARE base, altura, area NUMÉRICO
+
+	ESCREVA "Digite a base e a altura"
+	LEIA base,altura
+	area <- (base*altura)/2
+	ESCREVA "A área do triangulo é: ", area
+
+FIM_ALGORITMO
+
+ALGORTIMO Exercicio_2
+	DECLARE num1, num2 NUMÉRICO
+
+	ESCREVA "Digite dois numeros"
+	LEIA num1, num2
+	SE (num2 != 0) ENTAO
+		ESCREVA "O resultado da divisao é: ", num1/num2
+	SENAO
+		ESCREVA "O divisor é inválido"
+	FIM_SE
+
+FIM_ALGORITMO
+	
+ALGORITMO Exercicio_3
+	DECLARE media1, media2, soma, mediaDasMedias NUMÉRICO
+
+	media1 <- (7+8+9)/3
+	media2 <- (4+5+6)/3
+	soma <- media1 + media2
+	mediaDasMedias <- soma/2
+	ESCREVA media1, media2, soma, mediaDasMedias
+
+FIM_ALGORITMO
+
+ALGORITMO Exercicio_4
+	DECLARE num1, num2 NUMÉRICO
+
+	ESCREVA "Digite dois números"
+	LEIA num1,num2
+	SE (num1 = num2)
+		ESCREVA "Os numeros sao iguais"
+	SENAO
+		SE (num1< num2)
+			ESCREVA "Os numeros sao diferentes," num1, num2
+		SENAO 
+			ESCREVA "Os numeros sao diferentes," num2, num1
+		FIM_SE
+	FIM_SE
+
+FIM_ALGORITMO
+
+ALGORITMO Exercicio_5
+	DECLARE n1 NUMÉRICO
+
+	ESCREVA "Digite um numero"
+	LEIA n1
+
+	SE (n1 > 20) ENTAO
+		ESCREVA "O numero é maior que 20"
+	SENAO
+		SE (n1 < 20) ENTAO
+			ESCREVA "O numero é menor que 20"
+		SENAO
+			ESCREVA "O numero é igual a 20"
+		FIM_SE
+	FIM_SE
+
+	FIM_SE
+
+
+FIM_ALGORITMO
+
+ALGORITMO Exercicio_6
+	DECLARE numA, numB, aux NUMÉRICO
+
+	ESCREVA "digite dois numeros"
+	LEIA numA, numB
+	aux <- numA
+	numB <- numB
+	numA <- aux
+	ESCREVA "numA = ", numA, "numB = ", numB
+
+FIM_ALGORITMO
+
+ALGORITMO Exercicio_7
+	DECLARE nascimento, atual NUMÉRICO
+	DECLARE nome CARACTER
+
+	ESCREVA "Digite o ano do seu nascimento"
+	LEIA nascimento
+	ESCREVA "Digite o ano atual"
+	LEIA atual
+	SE ((atual-nascimento)>= 18)
+		ESCREVA "Digite seu nome"
+		LEIA nome
+		ESCREVA nome, ", sua entrada foi permitida."
+	FIM_sE
+
+FIM_ALGORITMO
